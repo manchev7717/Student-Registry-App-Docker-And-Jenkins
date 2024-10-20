@@ -1,6 +1,6 @@
 pipeline {
     agent any
-        stages {}
+        stages {
             stage('NPM install') {
                 steps {
                    bat 'npm install'
@@ -11,6 +11,6 @@ pipeline {
                     bat 'npm test'
                 }
             }
-    
+        }
     
 }
