@@ -6,6 +6,7 @@ pipeline {
                    bat 'npm install'
                 }
             }
+            //trigger testing
             stage('Run Tests') {
                 steps {
                     bat 'npm test'
